@@ -1,6 +1,9 @@
 site_name: AirBorne — Centro de ayuda (ES)
 site_description: Traducción al español de la documentación de AirBorne
 site_url: https://airborne.felpeto.es/
+repo_url: https://github.com/a22antoniofu/airborne
+repo_name: a22antoniofu/airborne
+edit_uri: edit/main/docs/
 
 theme:
   name: material
