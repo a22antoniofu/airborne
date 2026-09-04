@@ -1,0 +1,57 @@
+site_name: AirBorne — Centro de ayuda (ES)
+site_description: Traducción al español de la documentación de AirBorne
+site_url: https://airborne.felpeto.es/
+
+theme:
+  name: material
+  language: es
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+
+# El orden es explícito a propósito: con 14 páginas técnicas el orden
+# alfabético no coincide con el orden en que se leen (arranque, rodaje,
+# despegue, vuelo, aterrizaje...), así que se fija a mano aquí.
+nav:
+  - Inicio: index.md
+  - Primeros pasos:
+      - Primeros pasos: premiers-pas.md
+      - Cómo funciona el teclado: clavier.md
+      - Preguntando al avión: instruments.md
+  - Un vuelo, en orden:
+      - Arrancando: mise-en-route.md
+      - Rodando: rouler.md
+      - Despegando: decoller.md
+      - Volando y navegando: naviguer.md
+      - Aterrizando: se-poser.md
+      - La radio: radio.md
+      - Las checklists: checklists.md
+  - Entendiendo el avión:
+      - Los paneles: panneaux.md
+      - Los sistemas del avión: systemes.md
+      - La tableta: tablette.md
+  - Referencia:
+      - Glosario: glossaire.md
